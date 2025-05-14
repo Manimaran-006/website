@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maran's Restaurant- Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #054c04;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffdd57;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .menu-container {
+            padding: 10px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .menu-container h1 {
+            font-size: 2rem;
+            color: #054c04;
+            margin-bottom: 15px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-details {
+            padding: 10px;
+        }
+
+        .menu-details h3 {
+            font-size: 1.2rem;
+            color: #054c04;
+            margin-bottom: 8px;
+        }
+
+        .menu-details p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .menu-details .price {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #ff5722;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maran's Restaurant</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <h1>Our Menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="grill.png" alt="Chicken">
+                <div class="menu-details">
+                    <h3>Fire-Grilled Herb Chicken</h3>
+                    <p>Juicy chicken grilled to perfection, marinated in fresh herbs and garlic, served with a zesty lemon glaze.</p>
+                    <p class="price">₹1499/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pasta.png" alt="Pasta">
+                <div class="menu-details">
+                    <h3>Truffle Cream Fettuccine</h3>
+                    <p>Rich, silky pasta tossed in aromatic truffle cream sauce with wild mushrooms and shaved parmesan.</p>
+                    <p class="price">₹1799/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="paneer.png" alt="Paneer">
+                <div class="menu-details">
+                    <h3>Royal Butter Paneer</h3>
+                    <p>Soft paneer cubes simmered in a buttery tomato-cashew gravy, spiced just right for a royal vegetarian treat.</p>
+                    <p class="price">₹1299/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="sushi.png" alt="Sushi">
+                <div class="menu-details">
+                    <h3>Dragon Roll Sushi</h3>
+                    <p>Spicy tuna and avocado wrapped in seaweed and rice, topped with eel, sweet soy glaze, and a hint of heat.</p>
+                    <p class="price">₹1199/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="bowl.png" alt="Fresh Bowl">
+                <div class="menu-details">
+                    <h3>Mediterranean Power Bowl</h3>
+                    <p>A wholesome mix of quinoa, falafel, hummus, olives, and roasted veggies, drizzled with lemon tahini dressing.</p>
+                    <p class="price">₹1099/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="burger.png" alt="Burger">
+                <div class="menu-details">
+                    <h3>Gourmet Wagyu Burger</h3>
+                    <p> Premium Wagyu beef patty stacked with smoked cheddar, truffle aioli, and caramelized onions on a brioche bun.</p>
+                    <p class="price">₹2299/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="prawn.png" alt="Prawns">
+                <div class="menu-details">
+                    <h3>Garlic Butter Prawns</h3>
+                    <p>Tender prawns sautéed in rich garlic butter and herbs, served with a squeeze of lemon for a fresh finish.</p>
+                    <p class="price">₹1799/-</p>
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="pizza.png" alt="Pizza">
+                <div class="menu-details">
+                    <h3>Wood-Fired Burrata Pizza</h3>
+                    <p>Hand-tossed crust with burrata cheese, San Marzano tomato sauce, fresh basil, and a drizzle of olive oil.</p>
+                    <p class="price">₹1499/-</p>
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="noodles.png" alt="Noodles">
+                <div class="menu-details">
+                    <h3>Spicy Thai Basil Noodles</h3>
+                    <p>Stir-fried rice noodles with chili, Thai basil, crisp vegetables, and your choice of protein — bold and flavorful.</p>
+                    <p class="price">₹1399/-</p>
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="bake.png" alt="Desserts">
+                <div class="menu-details">
+                    <h3>Baked Alaska Surprise</h3>
+                    <p>Layers of cake and ice cream wrapped in golden meringue, flamed tableside for a show-stopping dessert.</p>
+                    <p class="price">₹999/-</p>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <footer>
+        <p>&copy; designed and developed by Manimaran V | <a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>

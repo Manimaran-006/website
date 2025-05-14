@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maran's Restaurant- Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #054c04;
+            color: #333;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .contact-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('cntbg.png') no-repeat center center/cover;
+            height: 300px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .contact-banner h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            color: #f9f9f9;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px 15px;
+            background: #f9f9f9;
+            gap: 20px;
+        }
+
+        .contact-details, .contact-form {
+            flex: 1;
+            max-width: 500px;
+            margin: 10px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details h2, .contact-form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1f1714;
+            text-align: center;
+        }
+
+        .contact-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .contact-details img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #e64a19;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            .contact-details, .contact-form {
+                max-width: 100%;
+            }
+
+            .contact-banner h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="contact-banner">
+     
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-details">
+            <h2>Get in Touch</h2>
+            <img src="contacts.png" alt="Contact Us">
+            <p><strong>Address:</strong> Maran's Restaurant,Yelagiri hills,tirupattur,Tamilnadu,India</p>
+            <p><strong>Phone:</strong> +91 9834455778</p>
+            <p><strong>Email:</strong> contact@maran.com</p>
+            <p><strong>Hours:</strong> Mon-Sat: 10.00am -11:00 pm</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-contact" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+         
+                <label for="phone no">Phone Number</label>
+                <input type="phone no" id="phone no" name="phone no" placeholder="Enter your phone number" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; designed and by developed by Manimaran V | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
